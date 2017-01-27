@@ -1,0 +1,52 @@
+﻿<div ng-controller="editControlador">
+    <form ng-show="esEditable()">
+
+        <fieldset>
+            <div class="form-group">
+
+                <label for="titulo">
+
+                    Título
+
+                </label>
+                <input id="titulo"  type="text" ng-model="edit.pelicula.NombrePelicula" required
+                       class="form-control" />
+
+            </div>
+            <div class="form-group">
+
+                <label for="director">
+
+                    Director
+
+                </label>
+                <input id="director" type="text" ng-model="edit.pelicula.NombreDirector" required
+                       class="form-control" />
+
+            </div>
+            <div class="form-group">
+
+                <label for="estreno">
+
+                    Estreno
+
+                </label>
+                <input id="estreno" type="text" ng-model="edit.pelicula.AcnoEstreno" required min="1900" max="2030"
+                       class="form-control" />
+
+            </div>
+            <button class="btn btn-default" ng-click="save()">Guardar</button>
+            <button class="btn btn-default" ng-click="cancel()">Cancelar</button>
+
+        </fieldset>
+
+
+
+
+
+    </form>
+
+
+
+
+</div>

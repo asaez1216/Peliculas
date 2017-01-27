@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelo.ET
 {
-    class Pelicula
+   public  class Pelicula
     {
         public int PeliculaId { get; set; }
         public string NombrePelicula { get; set; }

@@ -10,5 +10,9 @@ namespace Modelo.BAL
     interface IPeliculaBal
     {
         List<Pelicula> Listar();
+        Pelicula ObtenerPorId(int id);
+        bool Actualizar(Pelicula pelicula);
+        Pelicula Agregar(Pelicula pelicula);
+        bool Eliminar(int id);
     }
 }
