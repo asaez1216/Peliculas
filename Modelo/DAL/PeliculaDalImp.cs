@@ -103,7 +103,7 @@ namespace Modelo.DAL
                 {
                     con.Open();
 
-                    var query = new SqlCommand("UPDATE pelicula SET nombrePelicula = @p0, nombreDirector = @p1,acnoEstreno=@p2 WHERE pelicula = @p3", con);
+                    var query = new SqlCommand("UPDATE peliculas SET nombrePelicula = @p0, nombreDirector = @p1,acnoEstreno=@p2 WHERE peliculaId = @p3", con);
 
                     query.Parameters.AddWithValue("@p0", pelicula.NombrePelicula);
                     query.Parameters.AddWithValue("@p1", pelicula.NombreDirector);

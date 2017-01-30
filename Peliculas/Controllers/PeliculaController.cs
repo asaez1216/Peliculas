@@ -31,9 +31,9 @@ namespace Peliculas.Controllers
         // POST: api/Pelicula
         // crear
         
-        public void Post(Pelicula pelicula)
+        public Pelicula Post(Pelicula pelicula)
         {
-            peliculaBal.Agregar(pelicula);
+            return peliculaBal.Agregar(pelicula);
             
         }
 

@@ -30,12 +30,16 @@ function EditControlador($scope, peliculasServicio) {
     // al crear una película se agrega a la lista 
     var crearPelicula = function () {
         console.log("inicio crear")
-        peliculasServicio.create($scope.edit.pelicula).success(function (pelicula) {
+        peliculasServicio.create($scope.edit.pelicula).then(function (pelicula) {
 
             console.log(pelicula);
 
             $scope.peliculas.push(pelicula);
             $scope.edit.pelicula = null;
+
+        }, function (error) {
+
+            console.log(error);
 
         });
 
